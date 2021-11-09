@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengxiong10/vue2-datepicker.git"
+    "url": "git+https://github.com/angel520erc/vue2-datepicker.git"
   },
   "keywords": [
     "vue",
@@ -41,9 +41,9 @@
   "author": "xiemengxiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mengxiong10/vue2-datepicker/issues"
+    "url": "https://github.com/angel520erc/vue2-datepicker/issues"
   },
-  "homepage": "https://github.com/mengxiong10/vue2-datepicker#readme",
+  "homepage": "https://github.com/angel520erc/vue2-datepicker#readme",
   "peerDependencies": {
     "vue": "^2.5.0"
   },
