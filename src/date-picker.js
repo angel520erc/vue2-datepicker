@@ -416,7 +416,25 @@ export default {
     },
     handleInputInput(evt) {
       // slot input v-model
-      this.userInput = typeof evt === 'string' ? evt : evt.target.value;
+      // auto input
+      const inputStr = typeof evt === 'string' ? evt : evt.target.value;
+      const dataArr = this.format ? this.format.split(/[/.\b-:]/g) : []
+      let sumLength = 0;
+      let reorganizeDate = ''
+      if (dataArr.length !== 0) {
+        if (inputStr.length >= dataArr[0].length) {
+          dataArr.forEach((str, index) => {
+            sumLength += str.length;
+            if (inputStr.length >= sumLength + index) {
+              const delimiter = this.format.charAt(sumLength + index);
+              reorganizeDate += inputStr.substring(index === 0 ? 0 : (sumLength - dataArr[index].length) + index, sumLength + index) + delimiter;
+            } else {
+              reorganizeDate += inputStr.substring((sumLength - dataArr[index].length) + index)
+            }
+          });
+        }
+      }
+      this.userInput = reorganizeDate.length !== 0 ? reorganizeDate : inputStr
     },
     handleInputKeydown(evt) {
       const { keyCode } = evt;
