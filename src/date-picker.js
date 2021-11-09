@@ -387,7 +387,8 @@ export default {
     },
     handleInputChange() {
       if (!this.editable || this.userInput === null) return;
-      const text = this.userInput.trim();
+      let text = this.userInput.trim();
+      text = this.autoInputfromat(text)
       this.userInput = null;
       if (text === '') {
         this.clear();
@@ -416,25 +417,29 @@ export default {
     },
     handleInputInput(evt) {
       // slot input v-model
-      // auto input
-      const inputStr = typeof evt === 'string' ? evt : evt.target.value;
+      this.userInput = typeof evt === 'string' ? evt : evt.target.value;
+    },
+    autoInputfromat(dateStr) {
+      if (!this.format) return dateStr
+      const pureNumbers = dateStr.replace(/[&|*^%$# -./@:TZ]/g, "")
       const dataArr = this.format ? this.format.split(/[/.\b-:]/g) : []
       let sumLength = 0;
       let reorganizeDate = ''
       if (dataArr.length !== 0) {
-        if (inputStr.length >= dataArr[0].length) {
+        if (pureNumbers.length >= dataArr[0].length) {
           dataArr.forEach((str, index) => {
             sumLength += str.length;
-            if (inputStr.length >= sumLength + index) {
+            if (pureNumbers.length >= sumLength) {
               const delimiter = this.format.charAt(sumLength + index);
-              reorganizeDate += inputStr.substring(index === 0 ? 0 : (sumLength - dataArr[index].length) + index, sumLength + index) + delimiter;
+              reorganizeDate += pureNumbers.substring(index === 0 ? 0 : (sumLength - dataArr[index].length), sumLength) + delimiter;
             } else {
-              reorganizeDate += inputStr.substring((sumLength - dataArr[index].length) + index)
+              reorganizeDate += pureNumbers.substring((sumLength - dataArr[index].length))
+              reorganizeDate += pureNumbers.substring(sumLength - dataArr[index].length);
             }
           });
         }
       }
-      this.userInput = reorganizeDate.length !== 0 ? reorganizeDate : inputStr
+      return reorganizeDate.length !== 0 ? reorganizeDate : dateStr;
     },
     handleInputKeydown(evt) {
       const { keyCode } = evt;
