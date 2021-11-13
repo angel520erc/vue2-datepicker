@@ -1,5 +1,5 @@
-import DatePicker from 'vue2-datepicker';
-import tr from 'date-format-parse/lib/locale/tr';
+import DatePicker from 'vue2-datepicker-auto-format';
+import tr from 'date-format-parse-roc/lib/locale/tr';
 
 const lang = {
   formatLocale: tr,

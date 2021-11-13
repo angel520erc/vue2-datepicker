@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const libLocales = path.resolve(__dirname, '../../node_modules/date-format-parse/lib/locale');
+const libLocales = path.resolve(__dirname, '../../node_modules/date-format-parse-roc/lib/locale');
 
 const localLocalePath = path.resolve(__dirname, '../../src/locale');
 
@@ -17,8 +17,8 @@ const getTemplate = locale => {
   const yearFormat = yearFormatMap[locale] || 'YYYY';
 
   const template = `
-${locale === 'en' ? '' : "import DatePicker from 'vue2-datepicker';"}
-import ${formatLocale} from 'date-format-parse/lib/locale/${locale}';
+${locale === 'en' ? '' : "import DatePicker from 'vue2-datepicker-auto-format';"}
+import ${formatLocale} from 'date-format-parse-roc/lib/locale/${locale}';
 
 const lang = {
   formatLocale: ${formatLocale},

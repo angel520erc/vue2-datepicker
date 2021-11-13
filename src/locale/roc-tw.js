@@ -3,11 +3,11 @@ import zhTW from 'date-format-parse-roc/lib/locale/zh-tw';
 
 const lang = {
   formatLocale: zhTW,
-  yearFormat: 'YYYY年',
+  yearFormat: '民國YYY年',
   monthFormat: 'MMM',
   monthBeforeYear: false,
 };
 
-DatePicker.locale('zh-tw', lang);
+DatePicker.locale('roc-tw', lang);
 
 export default lang;

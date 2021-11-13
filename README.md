@@ -1,17 +1,17 @@
-# vue2-datepicker
+# vue2-datepicker-auto-format
 
-[中文版](https://github.com/mengxiong10/vue2-datepicker/blob/master/README.zh-CN.md)
+[中文版](https://github.com/angel520erc/vue2-datepicker-auto-format/blob/master/README.zh-CN.md)
 
 > A Datepicker Component For Vue2
 
-<a href="https://travis-ci.org/mengxiong10/vue2-datepicker">
-  <img src="https://travis-ci.org/mengxiong10/vue2-datepicker.svg?branch=master" alt="build:passed">
+<a href="https://travis-ci.org/angel520erc/vue2-datepicker-auto-format">
+  <img src="https://travis-ci.org/angel520erc/vue2-datepicker-auto-format.svg?branch=master" alt="build:passed">
 </a>
-<a href="https://coveralls.io/github/mengxiong10/vue2-datepicker">
-  <img src="https://coveralls.io/repos/github/mengxiong10/vue2-datepicker/badge.svg?branch=master&service=github" alt="Badge">
+<a href="https://coveralls.io/github/angel520erc/vue2-datepicker-auto-format">
+  <img src="https://coveralls.io/repos/github/angel520erc/vue2-datepicker-auto-format/badge.svg?branch=master&service=github" alt="Badge">
 </a>
-<a href="https://www.npmjs.com/package/vue2-datepicker">
-  <img src="https://img.shields.io/npm/v/vue2-datepicker.svg" alt="npm">
+<a href="https://www.npmjs.com/package/vue2-datepicker-auto-format">
+  <img src="https://img.shields.io/npm/v/vue2-datepicker-auto-format.svg" alt="npm">
 </a>
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
@@ -19,22 +19,22 @@
 
 ## Demo
 
-<https://mengxiong10.github.io/vue2-datepicker/index.html>
+<https://angel520erc.github.io/vue2-datepicker-auto-format/index.html>
 
-![image](https://github.com/mengxiong10/vue2-datepicker/raw/master/screenshot/demo.png)
+![image](https://github.com/angel520erc/vue2-datepicker-auto-format/raw/master/screenshot/demo.png)
 
 ## Install
 
 ```bash
-$ npm install vue2-datepicker --save
+$ npm install vue2-datepicker-auto-format --save
 ```
 
 ## Usage
 
 ```html
 <script>
-  import DatePicker from 'vue2-datepicker';
-  import 'vue2-datepicker/index.css';
+  import DatePicker from 'vue2-datepicker-auto-format';
+  import 'vue2-datepicker-auto-format/index.css';
 
   export default {
     components: { DatePicker },
@@ -69,7 +69,7 @@ $namespace: 'xmx'; // change the 'mx' to 'xmx'. then <date-picker prefix-class="
 $default-color: #555;
 $primary-color: #1284e7;
 
-@import '~vue2-datepicker/scss/index.scss';
+@import '~vue2-datepicker-auto-format/scss/index.scss';
 ```
 
 ## Internationalization
@@ -79,14 +79,14 @@ you can import a locale file.
 Once you import a locale, it becomes the active locale.
 
 ```js
-import DatePicker from 'vue2-datepicker';
-import 'vue2-datepicker/index.css';
+import DatePicker from 'vue2-datepicker-auto-format';
+import 'vue2-datepicker-auto-format/index.css';
 
-import 'vue2-datepicker/locale/zh-cn';
+import 'vue2-datepicker-auto-format/locale/zh-cn';
 ```
 
 You can also override some of the default locale by `lang`.
-[Full config](https://github.com/mengxiong10/vue2-datepicker/blob/master/locale.md)
+[Full config](https://github.com/angel520erc/vue2-datepicker-auto-format/blob/master/locale.md)
 
 ```html
 <script>
@@ -288,7 +288,7 @@ Set fixed time list to select;
 | input-error     | When user type a invalid Date                                                      | the input text                                                                                                           |
 | focus           | When input focus                                                                   |                                                                                                                          |
 | blur            | When input blur                                                                    |                                                                                                                          |
-| pick            | when select date [#429](https://github.com/mengxiong10/vue2-datepicker/issues/429) | date                                                                                                                     |
+| pick            | when select date [#429](https://github.com/angel520erc/vue2-datepicker-auto-format/issues/429) | date                                                                                                                     |
 | calendar-change | when change the calendar                                                           | date, oldDate, type('year'\|'month'\|'last-year'\|'next-year'\|'last-month'\|'next-month'\|'last-decade'\|'next-decade') |
 | panel-change    | when the calendar panel changes                                                    | type('year'\|'month'\|'date'), oldType                                                                                   |
 
@@ -311,12 +311,12 @@ Set fixed time list to select;
 
 If you find this project useful, you can buy me a coffee
 
-[Paypal Me](https://www.paypal.me/mengxiong10)
+[Paypal Me](https://www.paypal.me/angel520erc)
 
 ![donate](https://user-images.githubusercontent.com/14135808/83999111-a7947600-a994-11ea-84e9-9a215def4155.png)
 
 ## License
 
-[MIT](https://github.com/mengxiong10/vue2-datepicker/blob/master/LICENSE)
+[MIT](https://github.com/angel520erc/vue2-datepicker-auto-format/blob/master/LICENSE)
 
 Copyright (c) 2017-present xiemengxiong

@@ -155,7 +155,7 @@ const App = {
           <a
             style="margin-right: 10px"
             class="mx-btn-text mx-btn"
-            href="https://github.com/mengxiong10/vue2-datepicker"
+            href="https://github.com/mengxiong10/vue2-datepicker-auto-format"
             target="_blank"
           >
             GitHub

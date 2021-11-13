@@ -1,17 +1,17 @@
 {
-  "name": "vue2-datepicker",
+  "name": "vue2-datepicker-auto-format",
   "description": "A Datepicker Component For Vue2",
   "main": "index.js",
   "module": "index.esm.js",
   "alias": {
-    "vue2-datepicker": "./src/index.js"
+    "vue2-datepicker-auto-format": "./src/index.js"
   },
   "files": [
     "/locale",
     "/index.*",
     "/scss"
   ],
-  "version": "3.10.3",
+  "version": "3.10.8",
   "scripts": {
     "dev": "parcel ./example/dev.html --open --port 2235",
     "build:index": "cross-env NODE_ENV=production rollup -c",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angel520erc/vue2-datepicker.git"
+    "url": "git+https://github.com/angel520erc/vue2-datepicker-auto-format.git"
   },
   "keywords": [
     "vue",
@@ -41,14 +41,14 @@
   "author": "xiemengxiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angel520erc/vue2-datepicker/issues"
+    "url": "https://github.com/angel520erc/vue2-datepicker-auto-format/issues"
   },
-  "homepage": "https://github.com/angel520erc/vue2-datepicker#readme",
+  "homepage": "https://github.com/angel520erc/vue2-datepicker-auto-format#readme",
   "peerDependencies": {
     "vue": "^2.5.0"
   },
   "dependencies": {
-    "date-format-parse": "^0.2.7"
+    "date-format-parse-roc": "^0.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -113,7 +113,7 @@
       "jest-serializer-vue"
     ],
     "moduleNameMapper": {
-      "vue2-datepicker": "<rootDir>/src"
+      "vue2-datepicker-auto-format": "<rootDir>/src"
     },
     "coverageReporters": [
       "text",

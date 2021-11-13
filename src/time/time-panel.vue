@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { format } from 'date-format-parse';
+import { format } from 'date-format-parse-roc';
 import { getValidDate } from '../util/date';
 import ListColumns from './list-columns';
 import ListOptions from './list-options';

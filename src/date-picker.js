@@ -1,4 +1,4 @@
-import { parse, format, getWeek } from 'date-format-parse';
+import { parse, format, getWeek } from 'date-format-parse-roc';
 import { isValidDate, isValidRangeDate, isValidDates } from './util/date';
 import { pick, isObject, mergeDeep } from './util/base';
 import { getLocale } from './locale';
@@ -219,7 +219,7 @@ export default {
   created() {
     if (typeof this.format === 'object') {
       console.warn(
-        "[vue2-datepicker]: The prop `format` don't support Object any more. You can use the new prop `formatter` to replace it"
+        "[vue2-datepicker-auto-format]: The prop `format` don't support Object any more. You can use the new prop `formatter` to replace it"
       );
     }
   },
@@ -439,6 +439,7 @@ export default {
           });
         }
       }
+      console.warn('reorganizeDate', reorganizeDate)
       return reorganizeDate.length !== 0 ? reorganizeDate : dateStr;
     },
     handleInputKeydown(evt) {

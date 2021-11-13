@@ -1,5 +1,5 @@
-import DatePicker from 'vue2-datepicker';
-import id from 'date-format-parse/lib/locale/id';
+import DatePicker from 'vue2-datepicker-auto-format';
+import id from 'date-format-parse-roc/lib/locale/id';
 
 const lang = {
   formatLocale: id,

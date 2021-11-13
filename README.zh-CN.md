@@ -1,17 +1,17 @@
-# vue2-datepicker
+# vue2-datepicker-auto-format
 
-[English Version](https://github.com/mengxiong10/vue2-datepicker/blob/master/README.md)
+[English Version](https://github.com/mengxiong10/vue2-datepicker-auto-format/blob/master/README.md)
 
 > 一个基于 Vue2.x 的日期时间选择组件
 
-<a href="https://travis-ci.org/mengxiong10/vue2-datepicker">
-  <img src="https://travis-ci.org/mengxiong10/vue2-datepicker.svg?branch=master" alt="build:passed">
+<a href="https://travis-ci.org/mengxiong10/vue2-datepicker-auto-format">
+  <img src="https://travis-ci.org/mengxiong10/vue2-datepicker-auto-format.svg?branch=master" alt="build:passed">
 </a>
-<a href="https://coveralls.io/github/mengxiong10/vue2-datepicker">
-  <img src="https://coveralls.io/repos/github/mengxiong10/vue2-datepicker/badge.svg?branch=master&service=github" alt="Badge">
+<a href="https://coveralls.io/github/mengxiong10/vue2-datepicker-auto-format">
+  <img src="https://coveralls.io/repos/github/mengxiong10/vue2-datepicker-auto-format/badge.svg?branch=master&service=github" alt="Badge">
 </a>
-<a href="https://www.npmjs.com/package/vue2-datepicker">
-  <img src="https://img.shields.io/npm/v/vue2-datepicker.svg" alt="npm">
+<a href="https://www.npmjs.com/package/vue2-datepicker-auto-format">
+  <img src="https://img.shields.io/npm/v/vue2-datepicker-auto-format.svg" alt="npm">
 </a>
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
@@ -19,14 +19,14 @@
 
 ## 线上 Demo
 
-<https://mengxiong10.github.io/vue2-datepicker/index.html>
+<https://mengxiong10.github.io/vue2-datepicker-auto-format/index.html>
 
-![image](https://github.com/mengxiong10/vue2-datepicker/raw/master/screenshot/demo.png)
+![image](https://github.com/mengxiong10/vue2-datepicker-auto-format/raw/master/screenshot/demo.png)
 
 ## 安装
 
 ```bash
-$ npm install vue2-datepicker --save
+$ npm install vue2-datepicker-auto-format --save
 ```
 
 ## 主题
@@ -41,15 +41,15 @@ $namespace: 'xmx'; // 更改默认前缀为'xmx'. 然后设置 <date-picker pref
 $default-color: #555;
 $primary-color: #1284e7;
 
-@import '~vue2-datepicker/scss/index.scss';
+@import '~vue2-datepicker-auto-format/scss/index.scss';
 ```
 
 ## 用法
 
 ```html
 <script>
-  import DatePicker from 'vue2-datepicker';
-  import 'vue2-datepicker/index.css';
+  import DatePicker from 'vue2-datepicker-auto-format';
+  import 'vue2-datepicker-auto-format/index.css';
 
   export default {
     components: { DatePicker },
@@ -77,14 +77,14 @@ $primary-color: #1284e7;
 v3.x 默认语言是英文. 可以引入语言包切换到中文.
 
 ```js
-import DatePicker from 'vue2-datepicker';
-import 'vue2-datepicker/index.css';
+import DatePicker from 'vue2-datepicker-auto-format';
+import 'vue2-datepicker-auto-format/index.css';
 
-import 'vue2-datepicker/locale/zh-cn';
+import 'vue2-datepicker-auto-format/locale/zh-cn';
 ```
 
 还可以通过`lang`去覆盖一些默认语言选项.
-[完整配置](https://github.com/mengxiong10/vue2-datepicker/blob/master/locale.md)
+[完整配置](https://github.com/mengxiong10/vue2-datepicker-auto-format/blob/master/locale.md)
 
 ```html
 <script>
@@ -285,7 +285,7 @@ data() {
 | input-error     | 当输入一个无效的时间                                                           | 输入的值                                                                                                                 |
 | focus           | 当输入框有焦点                                                                 |                                                                                                                          |
 | blur            | 当输入框失焦                                                                   |                                                                                                                          |
-| pick            | 当点击日期时 [#429](https://github.com/mengxiong10/vue2-datepicker/issues/429) | date                                                                                                                     |
+| pick            | 当点击日期时 [#429](https://github.com/mengxiong10/vue2-datepicker-auto-format/issues/429) | date                                                                                                                     |
 | calendar-change | 当改变年月时                                                                   | date, oldDate, type('year'\|'month'\|'last-year'\|'next-year'\|'last-month'\|'next-month'\|'last-decade'\|'next-decade') |
 | panel-change    | 当日历面板改变时                                                               | type('year'\|'month'\|'date'), oldType                                                                                   |
 
@@ -314,6 +314,6 @@ data() {
 
 ## License
 
-[MIT](https://github.com/mengxiong10/vue2-datepicker/blob/master/LICENSE)
+[MIT](https://github.com/mengxiong10/vue2-datepicker-auto-format/blob/master/LICENSE)
 
 Copyright (c) 2017-present xiemengxiong

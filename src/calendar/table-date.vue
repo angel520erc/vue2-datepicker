@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import { getWeek, format } from 'date-format-parse';
+import { getWeek, format } from 'date-format-parse-roc';
 import IconButton from './icon-button';
 import { chunk } from '../util/base';
 import { getCalendar, setMonth, setYear } from '../util/date';
