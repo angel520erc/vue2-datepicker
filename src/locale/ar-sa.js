@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import arSA from 'date-format-parse-roc/lib/locale/ar-sa';
+import arSA from 'date-format-parse/lib/locale/ar-sa';
 
 const lang = {
   formatLocale: arSA,

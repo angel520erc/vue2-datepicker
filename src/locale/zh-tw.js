@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import zhTW from 'date-format-parse-roc/lib/locale/zh-tw';
+import zhTW from 'date-format-parse/lib/locale/zh-tw';
 
 const lang = {
   formatLocale: zhTW,

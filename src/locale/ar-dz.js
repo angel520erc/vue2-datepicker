@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import arDZ from 'date-format-parse-roc/lib/locale/ar-dz';
+import arDZ from 'date-format-parse/lib/locale/ar-dz';
 
 const lang = {
   formatLocale: arDZ,

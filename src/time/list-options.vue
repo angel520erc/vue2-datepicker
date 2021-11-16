@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { format } from 'date-format-parse-roc';
+import { format } from 'date-format-parse';
 import ScrollbarVertical from '../scrollbar/scrollbar-vertical';
 import { getScrollParent } from '../util/dom';
 import { getLocale } from '../locale';

@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import uk from 'date-format-parse-roc/lib/locale/uk';
+import uk from 'date-format-parse/lib/locale/uk';
 
 const lang = {
   formatLocale: uk,

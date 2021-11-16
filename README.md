@@ -277,20 +277,20 @@ Set fixed time list to select;
 
 ### Events
 
-| Name            | Description                                                                        | Callback Arguments                                                                                                       |
-| --------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| input           | When the value change(v-model event)                                               | date                                                                                                                     |
-| change          | When the value change(same as input)                                               | date, type('date'\|'hour'\|'minute'\|'second'\|'ampm                                                                     |
-| open            | When panel opening                                                                 | event                                                                                                                    |
-| close           | When panel closing                                                                 |                                                                                                                          |
-| confirm         | When click 'confirm' button                                                        | date                                                                                                                     |
-| clear           | When click 'clear' button                                                          |                                                                                                                          |
-| input-error     | When user type a invalid Date                                                      | the input text                                                                                                           |
-| focus           | When input focus                                                                   |                                                                                                                          |
-| blur            | When input blur                                                                    |                                                                                                                          |
+| Name            | Description                                                                                    | Callback Arguments                                                                                                       |
+| --------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| input           | When the value change(v-model event)                                                           | date                                                                                                                     |
+| change          | When the value change(same as input)                                                           | date, type('date'\|'hour'\|'minute'\|'second'\|'ampm                                                                     |
+| open            | When panel opening                                                                             | event                                                                                                                    |
+| close           | When panel closing                                                                             |                                                                                                                          |
+| confirm         | When click 'confirm' button                                                                    | date                                                                                                                     |
+| clear           | When click 'clear' button                                                                      |                                                                                                                          |
+| input-error     | When user type a invalid Date                                                                  | the input text                                                                                                           |
+| focus           | When input focus                                                                               |                                                                                                                          |
+| blur            | When input blur                                                                                |                                                                                                                          |
 | pick            | when select date [#429](https://github.com/angel520erc/vue2-datepicker-auto-format/issues/429) | date                                                                                                                     |
-| calendar-change | when change the calendar                                                           | date, oldDate, type('year'\|'month'\|'last-year'\|'next-year'\|'last-month'\|'next-month'\|'last-decade'\|'next-decade') |
-| panel-change    | when the calendar panel changes                                                    | type('year'\|'month'\|'date'), oldType                                                                                   |
+| calendar-change | when change the calendar                                                                       | date, oldDate, type('year'\|'month'\|'last-year'\|'next-year'\|'last-month'\|'next-month'\|'last-decade'\|'next-decade') |
+| panel-change    | when the calendar panel changes                                                                | type('year'\|'month'\|'date'), oldType                                                                                   |
 
 ### Slots
 

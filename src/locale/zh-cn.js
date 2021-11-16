@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import zhCN from 'date-format-parse-roc/lib/locale/zh-cn';
+import zhCN from 'date-format-parse/lib/locale/zh-cn';
 
 const lang = {
   formatLocale: zhCN,

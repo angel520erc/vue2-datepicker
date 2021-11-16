@@ -1,5 +1,5 @@
 import DatePicker from 'vue2-datepicker-auto-format';
-import ugCN from 'date-format-parse-roc/lib/locale/ug-cn';
+import ugCN from 'date-format-parse/lib/locale/ug-cn';
 
 const lang = {
   formatLocale: ugCN,

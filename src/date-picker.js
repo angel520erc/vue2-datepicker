@@ -1,4 +1,4 @@
-import { parse, format, getWeek } from 'date-format-parse-roc';
+import { parse, format, getWeek } from 'date-format-parse';
 import { isValidDate, isValidRangeDate, isValidDates } from './util/date';
 import { pick, isObject, mergeDeep } from './util/base';
 import { getLocale } from './locale';
@@ -388,7 +388,7 @@ export default {
     handleInputChange() {
       if (!this.editable || this.userInput === null) return;
       let text = this.userInput.trim();
-      text = this.autoInputfromat(text)
+      text = this.autoInputfromat(text);
       this.userInput = null;
       if (text === '') {
         this.clear();
@@ -420,26 +420,30 @@ export default {
       this.userInput = typeof evt === 'string' ? evt : evt.target.value;
     },
     autoInputfromat(dateStr) {
-      if (!this.format) return dateStr
-      const pureNumbers = dateStr.replace(/[&|*^%$# -./@:TZ]/g, "")
-      const dataArr = this.format ? this.format.split(/[/.\b-:]/g) : []
+      if (!this.format) return dateStr;
+      const pureNumbers = dateStr.replace(/[&|*^%$# -./@:TZ]/g, '');
+      const dataArr = this.format ? this.format.split(/[/.\b-:]/g) : [];
       let sumLength = 0;
-      let reorganizeDate = ''
+      let reorganizeDate = '';
       if (dataArr.length !== 0) {
         if (pureNumbers.length >= dataArr[0].length) {
           dataArr.forEach((str, index) => {
             sumLength += str.length;
             if (pureNumbers.length >= sumLength) {
               const delimiter = this.format.charAt(sumLength + index);
-              reorganizeDate += pureNumbers.substring(index === 0 ? 0 : (sumLength - dataArr[index].length), sumLength) + delimiter;
+              reorganizeDate +=
+                pureNumbers.substring(
+                  index === 0 ? 0 : sumLength - dataArr[index].length,
+                  sumLength
+                ) + delimiter;
             } else {
-              reorganizeDate += pureNumbers.substring((sumLength - dataArr[index].length))
+              reorganizeDate += pureNumbers.substring(sumLength - dataArr[index].length);
               reorganizeDate += pureNumbers.substring(sumLength - dataArr[index].length);
             }
           });
         }
       }
-      console.warn('reorganizeDate', reorganizeDate)
+      console.warn('reorganizeDate', reorganizeDate);
       return reorganizeDate.length !== 0 ? reorganizeDate : dateStr;
     },
     handleInputKeydown(evt) {
